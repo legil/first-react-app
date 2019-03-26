@@ -5,23 +5,14 @@ import Person from './Person/Person';
 class App extends Component {
   state = {
     persons: [
-      { name: 'Max', age: 26 },
-      { name: 'Steph', age: 28 },
-      { name : 'Jay', age: 23 }
-    ],
-    otherState: 'some other value'
+      { name: 'Max', age:'26' },
+      { name: 'Steph', age: '28' },
+      { name : 'Jay', age: '23' }
+    ]
   }
 
-  switchNameHandler = () => {
-    //console.log('was clicked!');
-    //DONT DO: this.state.persons[0].name = 'Arnold'
-    this.setState({
-      persons: [
-        { name: 'Arnold', age: 28 },
-        { name: 'Stef', age: 26 },
-        { name: 'Jay', age: 25 }
-      ]
-    })
+  swithNameHandler = () => {
+    console.log('was clicked!');
   }
 
   render() {
