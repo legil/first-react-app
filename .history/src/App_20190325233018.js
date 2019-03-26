@@ -23,16 +23,6 @@ class App extends Component {
       ]
     })
   }
-  //binding and two way binding example
-  nameChangedHandler = (event) => {
-    this.setState({
-      persons: [
-        { name: 'Max', age: 28 },
-        { name: event.target.value, age: 26 },
-        { name: 'Jay', age: 25 }
-      ]
-    })
-  }
 
   render() {
     return (
@@ -46,12 +36,10 @@ class App extends Component {
         <Person 
         name = {this.state.persons[1].name}  
         age = {this.state.persons[1].age}
-        changed = {this.nameChangedHandler}
-        />
+        click = {this.switchNameHandler.bind(this, 'Maxie!')}/>
         <Person 
         name = {this.state.persons[2].name}  
-        age = {this.state.persons[2].age}
-        click = {this.switchNameHandler.bind(this, 'Maxie!')}>
+        age = {this.state.persons[2].age}>
         I love to bake!</Person> 
       </div>
       

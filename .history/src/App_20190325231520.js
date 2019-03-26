@@ -12,23 +12,13 @@ class App extends Component {
     otherState: 'some other value'
   }
 
-  switchNameHandler = (newName) => {
+  switchNameHandler = () => {
     //console.log('was clicked!');
     //DONT DO: this.state.persons[0].name = 'Arnold'
     this.setState({
       persons: [
-        { name: newName, age: 28 },
+        { name: 'Arnold', age: 28 },
         { name: 'Stef', age: 26 },
-        { name: 'Jay', age: 25 }
-      ]
-    })
-  }
-  //binding and two way binding example
-  nameChangedHandler = (event) => {
-    this.setState({
-      persons: [
-        { name: 'Max', age: 28 },
-        { name: event.target.value, age: 26 },
         { name: 'Jay', age: 25 }
       ]
     })
@@ -39,25 +29,22 @@ class App extends Component {
       <div className="App">
         <h1> Hi, I'm a React App</h1>
         <p> This is really working!</p>
-        <button onClick = {() => this.switchNameHandler('Maximillian!!')}>Switch Name</button> 
+        <button onClick = {this.switchNameHandler}>Switch Name</button>
         <Person 
         name = {this.state.persons[0].name}  
         age = {this.state.persons[0].age}/> 
         <Person 
         name = {this.state.persons[1].name}  
         age = {this.state.persons[1].age}
-        changed = {this.nameChangedHandler}
-        />
+        click = {this.switchNameHandler}/> 
         <Person 
         name = {this.state.persons[2].name}  
-        age = {this.state.persons[2].age}
-        click = {this.switchNameHandler.bind(this, 'Maxie!')}>
+        age = {this.state.persons[2].age}>
         I love to bake!</Person> 
       </div>
       
       
     );
-    //^ bind is better to avoid too much re rendering
    // return React.createElement('div', {className: 'App'}, React.createElement('h1', null, 'Does this work now?'));
   }
 }
