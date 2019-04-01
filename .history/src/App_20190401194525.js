@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Radium from 'radium';
 import './App.css';
 import Person from './Person/Person';
 
@@ -78,7 +77,7 @@ class App extends Component {
     if(this.state.persons.length <= 2){
       classes.push('red'); //classes = ['red']
     }
-    if(this.state.persons.length <= 1){
+    if(this.state.persons.length){
       classes.push('bold'); //classes = ['red', 'bold']
     }
 
@@ -100,4 +99,4 @@ class App extends Component {
   }
 }
 
-export default Radium(App);
+export default App;
