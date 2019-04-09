@@ -1,3 +1,5 @@
+This repository contains code from my following along of Udemy's "The Ultimate React Guide" course. See documentation below: 
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
