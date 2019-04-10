@@ -3,8 +3,7 @@ import React, { Component } from 'react';
 import classes from './App.css';
 import Persons from '../components/Persons/Persons';
 import Cockpit from '../components/Cockpit/Cockpit';
-import withClass from '../hoc/withClass';
-import Aux from '../hoc/Auxiliary';
+import WithClass from '../hoc/WithClass';
 
 class App extends Component {
   constructor(props){
@@ -109,4 +108,4 @@ class App extends Component {
   }
 }
 
-export default withClass(App, classes.App);
+export default App;
