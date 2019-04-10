@@ -35,7 +35,6 @@ class Persons extends Component{
         }
 
         componentWillUnmount(){
-                //any code to run before component is removed goes here
                 console.log('[Persons.js] componentWillUnmount');
         }
 
