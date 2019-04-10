@@ -25,10 +25,6 @@ class App extends Component {
     return state;
   }
 
-  componentDidMount(){
-    console.log('[App.js] componentDidMount');
-  }
-
   //binding and two way binding example - on type
   nameChangedHandler = (event, id) => {
     const personIndex = this.state.persons.findIndex(p => {

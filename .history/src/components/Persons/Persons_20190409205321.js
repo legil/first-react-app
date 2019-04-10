@@ -12,8 +12,7 @@ const persons = (props) => {
                 key = {person.id}
                 changed = {(event) => props.changed(event, person.id)}/>
         );
-        });
-}
+        }
 
 
 
