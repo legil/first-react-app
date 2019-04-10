@@ -5,10 +5,7 @@ const cockpit = ( props ) => {
     useEffect(() => {
       console.log('[Cockpit.js] useEffect');
       // HttpRequest like componentDidUpdate
-      setTimeout(() => {
-        alert('Saved data');
-      }, 1000);
-    }, []);
+    })
 
     const assignedClasses = [];
     let btnClass= '';

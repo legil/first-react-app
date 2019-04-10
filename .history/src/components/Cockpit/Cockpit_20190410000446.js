@@ -8,7 +8,7 @@ const cockpit = ( props ) => {
       setTimeout(() => {
         alert('Saved data');
       }, 1000);
-    }, []);
+    }, [props.persons]);
 
     const assignedClasses = [];
     let btnClass= '';
