@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 
 import Aux from '../../../hoc/Auxiliary';
-import withClass from '../../../hoc/withClass';
+import withClass from '../../..hoc/withClass';
 import classes from './Person.css';
 
 
