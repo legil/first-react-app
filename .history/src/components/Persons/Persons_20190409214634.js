@@ -7,31 +7,8 @@ class Persons extends Component{
                 return state;
         }
 
-        //componentWillMount() -- legacy, shouldn't be used anymore but exist in older apps
-
-        /* componentWillRecieveProps(props){
-                console.log('[Persons.js] componentWillRecieveProps', props);
-        } */
-
-
-
-        shouldComponentUpdate(nextProps, nextState) {
-                console.log('[Persons.js] shouldComponentUpdate');
+        shouldComponentUpdate(nextProps, nextState){
                 return true;
-        }
-
-        getSnapshotBeforeUpdate(prevProps, prevState) {
-                console.log('[Persons.js getSnapshotBeforeUpdate');
-                return {message: 'Snapshot!'};
-        }
-
-       /*  componentWillUpdate(){
-
-        } */
-
-        componentDidUpdate(prevProps, prevState, snapshot){
-                console.log('[Persons.js] componentDidUpdate');
-                console.log(snapshot); 
         }
 
         render() {
