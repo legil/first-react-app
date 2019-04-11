@@ -53,7 +53,7 @@ const cockpit = ( props ) => {
            
               <button onClick={authContext.login}>
                Log in 
-              </button>
+              </button>}
             
         </div>
     );
