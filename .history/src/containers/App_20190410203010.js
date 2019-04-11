@@ -57,13 +57,11 @@ class App extends Component {
     const persons = [...this.state.persons];
     persons[personIndex] = person;
 
-    this.setState((prevState, props) => {
-      return{ 
-        persons: persons,
-        changeCounter: this.state.changeCounter + 1 
-      };
+    this.setState({
+      persons: persons,
+      changeCounter: this.state.chageCounter + 1 
     });
-  };
+  }
 
   deletePersonHandler = (personIndex) => {
     //const persons = this.state.persons.slice(); //makes copy of original array instead of referencing
